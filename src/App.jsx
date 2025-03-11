@@ -55,8 +55,10 @@ function App() {
         <div className="scroll-area">
           {messages.map((msg, index) => (
             <div key={index} className={`message ${msg.role}`}>
-              {msg.content}
-            </div>
+            {msg.content.split("\n").map((line, i) => (
+              <p key={i}>{line}</p>
+            ))}
+          </div>
           ))}
         </div>
         <div className="input-group">
