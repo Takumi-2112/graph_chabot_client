@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import ITI from "./assets/ITI.png";
 
-const API_URL = "https://aziticontainer.greenfield-cfc9b725.westus3.azurecontainerapps.io/chat_and_query";
+const API_URL = "https://aziticontainer.kindcliff-69d694db.westus3.azurecontainerapps.io/chat_and_query";
 
 function App() {
   const [messages, setMessages] = useState([
